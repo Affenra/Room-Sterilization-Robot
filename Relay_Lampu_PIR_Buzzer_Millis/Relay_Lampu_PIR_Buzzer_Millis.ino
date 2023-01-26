@@ -44,6 +44,7 @@ void loop(){
   // updates frequently
   unsigned long currentTime = millis();
   if(currentTime<=10000){
+     digitalWrite(relayPin, HIGH);
      if (currentTime-previousTime >= interval){
       tone(buzzerPin,buzzerFrequency,buzzerDuration);
      previousTime = currentTime;  
