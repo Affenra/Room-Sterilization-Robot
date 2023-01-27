@@ -49,7 +49,7 @@ void loop(){
       tone(buzzerPin,buzzerFrequency,buzzerDuration);
      previousTime = currentTime;  
      }
-  } else if (currentTime>=10000){  
+  } else if (currentTime>10000){  
       if(val1 == HIGH || val2 == HIGH || val3 == HIGH || val4 == HIGH){
        digitalWrite(relayPin, HIGH);
        Serial.println("Movement! delay 10 second");
